@@ -1,13 +1,1 @@
-web: gunicorn app:app
-
-WORKDIR /app
-
-COPY . .
-
-EXPOSE 3000
-
-RUN apk update && apk --no-cache add openssl bash curl &&\
-    chmod +x app.py &&\
-    pip install -r requirements.txt
-    
-CMD ["python3", "app.py"]
+web: gunicorn app:app --workers 3 --bind 0.0.0.0:$PORT
