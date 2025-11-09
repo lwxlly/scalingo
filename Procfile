@@ -1,4 +1,4 @@
-FROM python:3.10-alpine
+web: gunicorn app:app
 
 WORKDIR /app
 
