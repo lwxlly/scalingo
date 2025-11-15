@@ -1,10 +1,9 @@
 {
   "name": "nodejs-argo",
-  "version": "1,0,0",
-  "description": "Thsi is a node project",
+  "version": "1.0.0",
+  "description": "This is a node project",
   "main": "index.js",
   "author": "eooce",
-  "repository": "",
   "license": "MIT",
   "private": false,
   "scripts": {
